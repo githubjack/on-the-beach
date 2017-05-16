@@ -1,0 +1,254 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;}
+
+body {
+	background: #ffffff;
+	color: #19388a;
+	font-size: 16px;
+	font-family: arial, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;}
+
+h2 {
+	font-size: 16px;}
+
+h3 {
+	font-size: 11px;}
+
+p {
+	font-size: 12px;}
+
+.container {
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-width: 1020px;}
+
+.content {
+	background-image: url(../assets/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;}
+
+.hotels {
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 460px;}
+
+
+/*------------------------------------------------------------------
+SORT SECTION
+-------------------------------------------------------------------*/
+
+.sort {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 20px;}
+
+#sortitems {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	list-style:none;
+	justify-content: space-around;
+	margin-bottom: 20px;
+	padding:0;}
+#sortitems li:first-child{
+	margin-left:0.5rem;
+}
+#sortitems a {
+	border: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px rgba(136, 136, 136, 0.5);
+	color: #00aee1;
+	cursor: pointer;
+	flex-basis: 30%;
+	font-size: 12px;
+	outline: none;
+	padding: 15px 10px;
+	text-decoration:none;
+	text-align:center;}
+#sortitems .default {
+	background-color: #b2ebf7;}
+
+#sortitems .active {
+	background-color: #00aee1;
+	color: #ffffff;}
+
+
+/*------------------------------------------------------------------
+RESULTS BLOCK RETURNED FROM THE JS OBJECT LITERAL
+-------------------------------------------------------------------*/
+
+.result-block {
+	display: block;}
+
+#results {
+	list-style: none;
+	margin: 0;
+	padding: 0;}
+
+#results li {
+	margin: 1rem 0;}
+
+#sort-list {
+	list-style: none;
+	list-style-type:none!important;
+	margin: 0;
+	padding: 0;}
+
+#sort-list li {
+	margin: 1rem 0;}
+/*-------------------------------------------------------------------
+RESULTS BLOCK COMPONENTS 
+-------------------------------------------------------------------*/
+
+.hotel-data {
+	background-color: rgba(210, 226, 241, 0.7);
+	display: flex;
+	min-height: 70px;}
+
+
+/*------------------HOTEL TYPE-----------------------------------*/
+
+.hotel-type {
+	flex-basis: 77%;
+	height: auto;
+	justify-content: flex-start;
+	padding-left: 10px;}
+
+.hotel-type .star {
+	background-color: #ffba04;
+	display: inline-block;
+	height: 12px;
+	width: 12px;}
+
+.hotel-type h2,
+.hotel-type p,
+.hotel-price h3,
+.hotel-price p {
+	margin: 0;}
+
+.hotel-price p {
+	font-weight: bold;}
+
+.hotel-type h2 img {
+	margin-left: 0.5rem;}
+
+.hotel-price {
+	background-color: #f2d430;
+	border-left: 2px solid #2e70bb;
+	align-items: stretch;
+	flex-basis: 23%;
+	min-height: 70px;
+	padding-right: 10px;
+	text-align: right;}
+
+.hotel-price h3 {
+	padding-top: 0.5rem;}
+
+.hotel-price .price {
+	font-size: 13px;
+	font-weight: bold;}
+
+
+/*-------------------MAIN IMAGE------------------*/
+
+figure {
+	margin: 0;}
+
+figure img {
+	height: 222px;
+	width: 100%;}
+
+
+/*------------------BOOKINGS---------------------*/
+
+.hotel-booking-container {
+	display: block;
+	min-height: 60px;
+	margin-top: -20px;}
+
+.hotel-bookings {
+	background-color: #00aee1;
+	display: block;}
+
+.hotel-bookings .itinery,
+.hotel-bookings .control {
+	background-color: #00aee1;}
+
+.hotel-bookings .itinery {
+	color: #9cdff4;
+	padding: 0 10px;
+	display: block;
+	width: 70%;
+	min-height: 60px;}
+
+.hotel-bookings .itinery>p {
+	margin: 0;
+	padding: 20px 0;}
+
+.hotel-bookings .itinery p span {
+	color: #fff;
+	font-weight: bold;}
+
+.hotel-bookings .control {
+	background-color: #00aee1;
+	padding-right: 10px;
+	padding-top: 5px;
+	text-align: right;
+	float: right;
+	margin-top: -60px;}
+
+.button {
+	background-color: #00aee1;
+	background-image: url(../assets/show-more-closed.png);
+	background-repeat: no-repeat;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;}
+
+.button:hover {
+	background-color: #00aee1;
+	background-image: url(../assets/show-more-opened.png);
+	background-repeat: no-repeat;}
+
+
+/*---------------------------------------------------------------
+SUMMARY CONTENT SHOW/HIDE
+----------------------------------------------------------------*/
+
+.summary {
+	background-color: #ffffff;
+	color: #00aee1;
+	padding: 10px;}
+
+.summary p {
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin: 0;
+	text-align: center;}
+
+.summary .book-now {
+	background-color: #19388a;
+	border: none;
+	border-radius: 4px;
+	color: #ffffff;
+	display: block;
+	font-weight: bold;
+	margin: 0.7rem auto;
+	padding: 15px 20px;
+	text-transform: uppercase;}
